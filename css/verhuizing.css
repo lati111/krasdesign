@@ -1,0 +1,54 @@
+#main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#emailInputField {
+    display: block;
+    text-align: center;
+    align-self: center;
+}
+
+#left {
+    margin: 0 15px 0 15px;
+    flex-basis: 78%;
+}
+
+#right {
+    display: block;
+    align-self: center;
+    margin: 0 15px 0 15px;
+}
+
+li {
+    width: 300px;
+}
+
+#emailInputField {
+    flex-basis: 90%;
+    margin-bottom: 15px;
+}
+
+form {
+    font-size: 1.4em;
+}
+
+#domain {
+    height: 20px;
+    width: 300px;
+    font-size: 1.1em;
+}
+
+#submitButton {
+    height: 28px;
+    width: 100px;
+}
+
+.mapImg {
+    width: 300px;
+    height: 200px;
+    display: none;
+    margin: auto;
+}

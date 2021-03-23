@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 200px 1fr 70px;
+}
+
+#header {
+    grid-row: 1;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.navItem:link, .navItem:visited {
+    font-size: 1.6em;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navItem:hover {
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+}
+
+#main {
+    grid-row: 2;
+}
+
+#footer {
+    grid-row: 3;
+    border-top: 1px solid black;
+}
+
+#logo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+#title h1, #title h2 {
+    text-align: center;
+}
+
+#languages {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#englishButton, #dutchButton {
+    display: block;
+    align-self: center;
+    margin-right: 10px;
+    width: 140px;
+    height: 40px;
+}

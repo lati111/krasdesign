@@ -1,0 +1,26 @@
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#main div {
+    display: block;
+    height: 600px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    flex-basis: 26%;
+}
+
+#main div img {
+    width: 90%;
+    height: 260px;
+    margin: 10px;
+}
+
+span {
+    text-align: center;
+    margin: 0 15px 0 15px;
+}

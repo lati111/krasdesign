@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../css/over_ons.css" type="text/css">
+    <link rel="stylesheet" href="../css/huisstijl.css" type="text/css">
+</head>
+<body>
+<div id="header">
+    <div id="banner">
+        <img src="../img/placeholder.png" id="logo">
+        <div id="title">
+            <h1>Kras design</h1>
+            <h2>Een kras mediaconcept voor ieder bedrijf</h2>
+        </div>
+        <div id="languages">
+            <button id="dutchButton">Nederlands</button>
+            <button id="englishButton">English</button>
+        </div>
+
+    </div>
+    <div id="nav">
+        <a href="../index.html" class="navItem">Home</a>
+        <a href="diensten.html" class="navItem">Diensten</a>
+        <a href="portofolio.html" class="navItem">Portofolio</a>
+        <a href="verhuizing.html" class="navItem">Verhuizing</a>
+        <a href="domein.html" class="navItem">Domein</a>
+        <a href="over_ons.html" class="navItem">Over ons en contact</a>
+    </div>
+</div>
+<div id="main">
+    <div id="firstBlock">
+        <div>
+            <h1>Extra informatie bedrijf</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum cursus eleifend. Fusce ipsum neque, tristique eget dignissim in, aliquet dictum felis. In hac habitasse platea dictumst. Donec sit amet neque vehicula, fermentum tortor nec, consequat nunc. Nunc at nisi auctor, placerat eros eget, elementum massa. Nunc placerat erat vitae justo porttitor placerat. Donec nec convallis turpis. Nunc sed velit vitae est dictum viverra.
+                Praesent risus est, elementum ac cursus rhoncus, varius eget ligula. Aenean malesuada dolor quis nibh gravida, ut pharetra quam scelerisque. Ut rhoncus feugiat bibendum. Nulla nec arcu ut metus malesuada luctus sit amet ut nunc. Phasellus lorem lacus, rutrum at scelerisque in, dictum sed libero. Donec convallis facilisis sem. Cras eget viverra risus, non consectetur nisi. Maecenas ac purus imperdiet, vehicula nisi eget, porttitor nibh. Nulla tincidunt vestibulum libero, nec euismod lorem pharetra ut. Etiam in purus tempus, fermentum nibh at, mattis magna.
+                Donec in ultricies dolor. Curabitur ullamcorper lorem nibh, eget pulvinar metus fringilla eu. Cras non nisi maximus, porttitor leo quis, lacinia sem. Proin mollis bibendum leo, et venenatis arcu eleifend nec. Duis laoreet sit amet metus vel dictum. Duis massa nisl, ullamcorper non leo ut, viverra vulputate tortor. Phasellus consectetur ullamcorper massa at faucibus. Nam quis malesuada risus. Nam sed congue nibh, vitae pharetra eros. In hac habitasse platea dictumst. Vivamus turpis dui, fermentum sit amet tristique vel, condimentum ac odio.
+            </p>
+        </div>
+        <img src="../img/placeholder.png">
+    </div>
+    <div>
+        <h2>Contact informatie</h2>
+        <ul>
+            <li>Telefoon nummer 0000000000</li>
+            <li>adres: 4444be</li>
+            <li>email adres: a@mail.com</li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+<script>
+    const bodyLength = document.getElementById("main");
+    console.log(bodyLength.offsetHeight);
+    console.log(screen.height - 270);
+    if (bodyLength.offsetHeight < screen.height - 270) {
+        const length = screen.height - 400;
+        document.body.style.gridTemplateRows = "200px " + length.toString() + "px 70px"
+    }
+</script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../css/huisstijl.css">
+    <link rel="stylesheet" href="../css/domein.css">
+</head>
+<body>
+<div id="header">
+    <div id="banner">
+        <img src="../img/placeholder.png" id="logo">
+        <div id="title">
+            <h1>Kras design</h1>
+            <h2>Een kras mediaconcept voor ieder bedrijf</h2>
+        </div>
+        <div id="languages">
+            <button id="dutchButton">Nederlands</button>
+            <button id="englishButton">English</button>
+        </div>
+
+    </div>
+    <div id="nav">
+        <a href="../index.html" class="navItem">Home</a>
+        <a href="diensten.html" class="navItem">Diensten</a>
+        <a href="portofolio.html" class="navItem">Portofolio</a>
+        <a href="verhuizing.html" class="navItem">Verhuizing</a>
+        <a href="domein.html" class="navItem">Domein</a>
+        <a href="over_ons.html" class="navItem">Over ons en contact</a>
+    </div>
+</div>
+<div id="main">
+    <h1>Deomein check tool</h1>
+    <p>Hier onder kun je uw gewenst domein invoeren, en we checken of het beschikbaar is</p>
+    <form>
+        <label>Email adres:</label>
+        <br>
+        <input type="url" id="domain">
+        <input type="button" id="checkButton" value="Check">
+    </form>
+    <p id="domainUnavailbable">Domein is niet beschikbaar</p>
+    <p id="domainAvailable">Domein is beschikbaar</p>
+    <button onclick="validate(document.getElementById('domain').innerText)" id="registerButton">Registreer domein</button>
+</div>
+<div id="footer">
+</div>
+<script>
+    function validate(url) {
+        ping(url).then(function(e) {
+            if (e === 'true') {
+                document.getElementById('domainAvailable').style.display = "block";
+                document.getElementById('registerButton').style.display = "block";
+            } else {
+                document.getElementById('domainUnavailbable').style.display = "block";
+            }
+        }).catch(function(err) {
+            document.getElementById('domainUnavailbable').style.display = "block";
+        });
+    }
+
+    function ping(url) {
+        return new Promise(function(resolve, reject) {
+
+            const xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    if (xmlhttp.status == 200) {
+                        const e = JSON.parse(xmlhttp.response).exists;
+                        resolve(e);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        reject(false);
+                    }
+                    else {
+                        reject(false);
+                    }
+                }
+            }
+            xmlhttp.open("GET", 'http://www.dennisvanriet.nl/ping/ping_ws.php?url=' + url + '&t=' + Math.random(), true);
+            xmlhttp.send();
+        });
+    }
+</script>
+</body>
+<script>
+    const bodyLength = document.getElementById("main");
+    console.log(bodyLength.offsetHeight);
+    console.log(screen.height - 270);
+    if (bodyLength.offsetHeight < screen.height - 270) {
+        const length = screen.height - 400;
+        document.body.style.gridTemplateRows = "200px " + length.toString() + "px 70px"
+    }
+</script>
+</html>

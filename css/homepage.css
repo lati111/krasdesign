@@ -1,0 +1,62 @@
+#intro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#intro div {
+    margin-left: 15px;
+}
+
+#intro img {
+    display: block;
+    align-self: center;
+    margin: 0 15px 0 15px;
+    width: 350px;
+    height: 250px;
+}
+
+#verhuizing {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0 15px 15px;
+}
+
+#verhuizingInfo div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#verhuizingInfo div img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+#emailInputField {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 40px 0 30px;
+    border: 1px solid black;
+}
+
+#emailInputField h2 {
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+
+#emailInputField form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+#submitButton {
+    margin-top: 10px;
+    align-self: center;
+}

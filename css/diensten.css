@@ -1,0 +1,14 @@
+#info, #portoLink {
+    margin: 0 15px 0 15px;
+}
+
+#portoLink {
+    margin-top: 50px;
+    float: left;
+}
+
+#contact {
+    text-align: right;
+    float: right;
+    margin: 50px 15px 0 0;
+}
