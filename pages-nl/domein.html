@@ -10,7 +10,7 @@
 <body>
 <div id="header">
     <div id="banner">
-        <img src="../img/placeholder.png" id="logo">
+        <img src="../img/logo.png" id="logo">
         <div id="title">
             <h1>Kras design</h1>
             <h2>Een kras mediaconcept voor ieder bedrijf</h2>
@@ -37,15 +37,28 @@
         <label>Email adres:</label>
         <br>
         <input type="url" id="domain">
-        <input type="button" id="checkButton" value="Check">
+        <input type="button" id="checkButton" value="Check" onclick="validate_test(document.getElementById('domain').innerText)" >
     </form>
     <p id="domainUnavailbable">Domein is niet beschikbaar</p>
     <p id="domainAvailable">Domein is beschikbaar</p>
-    <button onclick="validate(document.getElementById('domain').innerText)" id="registerButton">Registreer domein</button>
+    <button id="registerButton">Registreer domein</button>
 </div>
 <div id="footer">
 </div>
 <script>
+    function validate_test(url) {
+        document.getElementById('registerButton').style.display = "none";
+        document.getElementById('domainUnavailbable').style.display = "none";
+        document.getElementById('domainAvailable').style.display = "none";
+        if (Math.random() > 0.5) {
+            document.getElementById('domainAvailable').style.display = "block";
+            document.getElementById('registerButton').style.display = "block";
+        }
+        else {
+            document.getElementById('domainUnavailbable').style.display = "block";
+        }
+    }
+
     function validate(url) {
         ping(url).then(function(e) {
             if (e === 'true') {

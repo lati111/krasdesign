@@ -6,15 +6,17 @@ body {
 
 #header {
     grid-row: 1;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     margin: 0;
+    background-color: lightgray;
 }
 
 #banner {
     display: flex;
     justify-content: space-between;
     height: 150px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    background-color: lightsteelblue;
 }
 
 #nav {
@@ -33,16 +35,18 @@ body {
 .navItem:hover {
     font-size: 1.8em;
     text-decoration: none;
-    color: black;
+    color: darkred;
 }
 
 #main {
     grid-row: 2;
+    background-color: lightsteelblue;
 }
 
 #footer {
     grid-row: 3;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
+    background-color: lightgray;
 }
 
 #logo {
@@ -53,6 +57,19 @@ body {
 
 #title h1, #title h2 {
     text-align: center;
+}
+
+#title h2 {
+    color: black;
+}
+
+h1, h2 {
+    color: darkred;
+}
+
+.blackText, p {
+    color: black;
+    font-family: "Helvetica Neue", Arial;
 }
 
 #languages {
@@ -68,3 +85,8 @@ body {
     width: 140px;
     height: 40px;
 }
+
+p {
+    font-size: 1.2em;
+}
+

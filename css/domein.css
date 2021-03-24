@@ -30,7 +30,7 @@
 
 #domainAvailable {
     display: none;
-    color: red;
+    color: green;
     font-size: 1.1em;
 }
 
@@ -38,6 +38,8 @@
     display: none;
     align-self: center;
     margin: 15px 0 15px 0;
+    width: 200px;
+    height: 60px;
 }
 
 form label {

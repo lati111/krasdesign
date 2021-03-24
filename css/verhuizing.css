@@ -18,17 +18,25 @@
 
 #right {
     display: block;
+    width: 16%;
     align-self: center;
     margin: 0 15px 0 15px;
 }
 
 li {
-    width: 300px;
+    display: block;
+    width: 16%;
+    font-size: 1.2em;
 }
 
 #emailInputField {
     flex-basis: 90%;
     margin-bottom: 15px;
+}
+
+#email {
+    height: 22px;
+    width: 400px;
 }
 
 form {
@@ -42,7 +50,7 @@ form {
 }
 
 #submitButton {
-    height: 28px;
+    height: 30px;
     width: 100px;
 }
 
