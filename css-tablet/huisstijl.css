@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-rows: 200px 1fr 70px;
+    grid-template-rows: 100px 1fr 35px;
 }
 
 #header {
@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     height: 150px;
     border-bottom: 2px solid black;
-    background-color: lightgray;
+    background-color: red;
 }
 
 #nav {
@@ -44,12 +44,9 @@ body {
 }
 
 #footer {
-    display: flex;
-    flex-direction: row;
     grid-row: 3;
     border-top: 2px solid black;
     background-color: lightsteelblue;
-    justify-content: space-around;
 }
 
 #logo {
@@ -93,8 +90,3 @@ p {
     font-size: 1.2em;
 }
 
-#footer p {
-    align-self: center;
-    margin: 15px;
-    font-size: 0.8em;
-}

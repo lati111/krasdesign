@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Kras design - verhuizing</title>
 
-    <link rel="stylesheet" href="../css/huisstijl.css">
-    <link rel="stylesheet" href="../css/verhuizing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="../css-tablet/huisstijl.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="../css/huisstijl.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="../css-tablet/verhuizing.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="../css/verhuizing.css">
 </head>
 <body>
 <div id="header">
@@ -16,8 +20,8 @@
             <h2>Een kras mediaconcept voor ieder bedrijf</h2>
         </div>
         <div id="languages">
-            <button id="dutchButton">Nederlands</button>
-            <button id="englishButton">English</button>
+            <a href="verhuizing.html"><button id="dutchButton">Nederlands</button></a>
+            <a href="../pages-en/verhuizing.html"><button id="englishButton">English</button></a>
         </div>
 
     </div>
@@ -38,19 +42,17 @@
         </p>
     </div>
     <div id="right">
+        <h2>Navigatie</h2>
         <ul>
-            <li onmouseover = "show('map1')">links eeeeeeeeeeeeeeeeeeeeeeeee</li>
-            <li onmouseover = "show('map1')">links</li>
-            <li onmouseover = "show('map1')">links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
+            <li onmouseover = "show('map1')">instructie</li>
+            <li onmouseover = "show('map2')">instructie</li>
+            <li onmouseover = "show('map3')">instructie</li>
+            <li onmouseover = "show('map4')">instructie</li>
+            <li onmouseover = "show('map5')">instructie</li>
+            <li onmouseover = "show('map6')">instructie</li>
         </ul>
         <div>
             <img src="../img/placeholder.png" class="mapImg" id="map1">
-            <img src="../img/placeholder.png" class="mapImg" id="map2">
-            <img src="../img/placeholder.png" class="mapImg" id="map3">
         </div>
     </div>
     <div id="emailInputField">
@@ -63,7 +65,19 @@
     </div>
 </div>
 <div id="footer">
-
+    <p>
+        twitter: @krasdesign
+        <br>
+        instagram: @krasdesign
+    </p>
+    <p>
+        Telefoon nummer 0000000000<br>
+        adres: 4444be straatnaam 55, stadsnaam<br>
+        email adres: krasdesign@mail.com
+    </p>
+    <p>
+        Gemaakt door: Kras design
+    </p>
 </div>
 </body>
 <script>

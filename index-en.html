@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kras design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="css-tablet/huisstijl.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="css/huisstijl.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="css-tablet/homepage.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="css/homepage.css">
+</head>
+<body>
+    <div id="header">
+        <div id="banner">
+            <img src="img/logo.png" id="logo">
+            <div id="title">
+                <h1>Kras design</h1>
+                <h2>A Kras mediaconcept for every company</h2>
+            </div>
+            <div id="languages">
+                <a href="index.html"><button id="dutchButton">Nederlands</button></a>
+                <a href="index-en.html"><button id="englishButton">English</button></a>
+            </div>
+
+        </div>
+        <div id="nav">
+            <a href="index-en.html" class="navItem">Home</a>
+            <a href="pages-en/diensten.html" class="navItem">Services</a>
+            <a href="pages-en/portofolio.html" class="navItem">Portofolio</a>
+            <a href="pages-en/verhuizing.html" class="navItem">Moving</a>
+            <a href="pages-en/domein.html" class="navItem">Domain</a>
+            <a href="pages-en/over_ons.html" class="navItem">About us and contact</a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="intro">
+            <div>
+                <h2>Introduction kras design</h2>
+                <p>
+                    Greetings, we as in KrasDesign are a company that delivers what is asked. 20 years ago I (Jan) and Freek founded this beautiful company, we are very proud of what it has become. KrasDesign started as a small company that designed logos for private companies and freelancers. We eventually decided to get more out of this company, only logos were not enough for us, after brainstorming for a while I came to Freek with the idea of creating custom websites and certain corporate identities and eventually selling them to the buyer. This idea has made us who we are today, with the wide range of services we offer, we make every idea possible. That is ultimately what it is all about for KrasDesign. A Kras media concept for any business.
+                </p>
+            </div>
+            <img src="img/logo.png">
+        </div>
+        <div id="verhuizing">
+            <div id="verhuizingInfo">
+                <h2>About our move</h2>
+                <div>
+                    <img src="img/boxes.png"/>
+                    <p>
+                        The time has finally come! We are moving! The building in which we have worked for the past 20 years is becoming a thing of the past. It was high time for an expansion, due to our wide range and the ever-growing number of employees and applications, this also requires more space, more information about the move can be found under the heading: Relocation!
+                    </p>
+                </div>
+            </div>
+            <div id="emailInputField">
+                <h2 class="blackText">Do you want to stay informed about our move? Then sign up below</h2>
+                <form method="post" action="">
+                    <label>email address</label>
+                    <input type="email" name="email">
+                    <input type="submit" value="Send" id="submitButton">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            twitter: @krasdesign
+            <br>
+            instagram: @krasdesign
+        </p>
+        <p>
+            Phone number 0000000000<br>
+            Address: 4444be straatnaam 55, stadsnaam<br>
+            email address: krasdesign@mail.com
+        </p>
+        <p>
+            Made by: Kras design
+        </p>
+    </div>
+</body>
+<script>
+    const bodyLength = document.getElementById("main");
+    console.log(bodyLength.offsetHeight);
+    console.log(screen.height - 270);
+    if (bodyLength.offsetHeight < screen.height - 270) {
+        const length = screen.height - 400;
+        document.body.style.gridTemplateRows = "200px " + length.toString() + "px 70px"
+    }
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kras design - services</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="../css-tablet/huisstijl.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="../css/huisstijl.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="../css-tablet/diensten.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="../css/diensten.css">
+</head>
+<body>
+<div id="header">
+    <div id="banner">
+        <img src="../img/logo.png" id="logo">
+        <div id="title">
+            <h1>Kras design</h1>
+            <h2>A Kras mediaconcept for every company</h2>
+        </div>
+        <div id="languages">
+            <a href="../pages-nl/diensten.html"><button id="dutchButton">Nederlands</button></a>
+            <a href="diensten.html"><button id="englishButton">English</button></a>
+        </div>
+
+    </div>
+    <div id="nav">
+        <a href="../index-en.html" class="navItem">Home</a>
+        <a href="diensten.html" class="navItem">Services</a>
+        <a href="portofolio.html" class="navItem">Portofolio</a>
+        <a href="verhuizing.html" class="navItem">Moving</a>
+        <a href="domein.html" class="navItem">Domain</a>
+        <a href="over_ons.html" class="navItem">About us and contact</a>
+    </div>
+</div>
+<div id="main">
+    <div id="info">
+        <h2>What do we do?</h2>
+        <p>
+            We offer a wide range of services, everything we provide can be requested on request, so if you are creative with a bunch of ideas, tell KrasDesign and we will deliver exactly what you are looking for! The range we offer consists of: Logos, Websites and Corporate Identities. But that's only a fraction of what we offer, do you already have a website but something isn't right? We fix the problem for you! Do you already have a fully functional website but are still looking for a logo that matches the corporate identity? We make the logo for you, and so the list goes on. We can also give you ideas by letting you visit us and look at the project together, if something is not to your liking, we will adjust it immediately! We have already provided many services to various buyers including: Private companies, freelancers and buyers who just do it as a hobby! If you would like to see a few of our pieces ... then click on our portfolio below! Are you interested and do you want to work with us yourself? Then click on our contact page!
+        </p>
+    </div>
+    <div>
+        <div id="portoLink">
+            <h2>Portofolio</h2>
+            <p>We also have a portofolio of our previous works, click <a href="portofolio.html">here</a> if you want to see more.</p>
+        </div>
+        <div id="contact">
+            <h2>Interested? </h2>
+            <p>Contact us through our <a href="over_ons.html">contact page</a> for further information!</p>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <p>
+        twitter: @krasdesign
+        <br>
+        instagram: @krasdesign
+    </p>
+    <p>
+        Phone number 0000000000<br>
+        Address: 4444be straatnaam 55, stadsnaam<br>
+        email address: krasdesign@mail.com
+    </p>
+    <p>
+        Made by: Kras design
+    </p>
+</div>
+</body>
+<script>
+    const bodyLength = document.getElementById("main");
+    console.log(bodyLength.offsetHeight);
+    console.log(screen.height - 270);
+    if (bodyLength.offsetHeight < screen.height - 270) {
+        const length = screen.height - 400;
+        document.body.style.gridTemplateRows = "200px " + length.toString() + "px 70px"
+    }
+</script>
+</html>
